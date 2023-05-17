@@ -3,13 +3,13 @@
 
 :root {
   --color-primary: #60A8B2;
-  --container-width: 1488px;
+  --container-width: 1366px;
   --stroke-primary: #60A8B2;
 }
 
 nav #logo {
   margin-top: 14px;
-  padding-right: 282px;
+  padding-right: 161px;
 }
 
 #menu-icons svg {
@@ -36,20 +36,19 @@ nav a {
 #reservation-box{
   box-shadow: 0px 12px 30px #00000029;
   border-radius: 22px;
-  width: 374px;
-  height: 371px;
-  padding: 15px;
+  width: 404px;
+  height: 401px;
+  padding: 35px;
+  margin-top: 144px;
+  margin-left: 53px;
+  margin-right: -125px;
+  background-color: white;
 }
 
 #reservation-box button {
   padding-left: 130px;
   padding-right: 130px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-#reservation-box input {
-  width: 334px;
+  height: 53px;
 }
 
 #reservation-box h4 {
@@ -61,9 +60,44 @@ nav a {
 #reservation-box h1 {
   font-size: 25px;
   text-align: left;
-  font: normal normal bold 25px/34px Galano Grotesque;
+  font-family: Galano Grotesque;
+  line-height: 34px;
   letter-spacing: -0.38px;
-  width: 334px;
+}
+
+footer img {
+  object-fit: cover;
+  width: 1295px;
+  height: 425px;
+  border-radius: 40px;
+  filter: brightness(66%);
+}
+
+footer .container {
+  position: relative;
+}
+
+footer button {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 186px;
+  height: 44px;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: Galano Grotesque;
+  font-size: 54px;
+  line-height: 73px;
+  font-weight: 900;
+  letter-spacing: 0px;
+  color: #FFFFFF;
 }
 
 #text-margin{
@@ -71,15 +105,37 @@ nav a {
 }
 
 .card{
-
+  position: relative;
+  width: 402px;
+  height: 566px;
+  border: 1px solid #00000019;
+  padding: 32px;
+  border-radius: 20px;
 }
 
 .card-rating{
-
+  position: absolute;
+  margin-top: 8px;
+  margin-left: 8px;
+  width: 62px;
+  height: 29px;
+  background-color: #60A8B2;
+  border-radius: 9px;
 }
 
-.card-photo{
+.card-rating svg {
+  margin-top: 3px;
+  margin-left: 2px;
+}
 
+.card-rating p {
+  font-size: 14px;
+  margin-top: 3px;
+  color: white;
+}
+
+.card-photo img{
+  border-radius: 12px;
 }
 
 .card-text{
@@ -106,6 +162,9 @@ nav a {
   max-height: 558px;
   max-width: 939px;
   border-radius: 39px;
+  margin-top: 65px;
+  position: relative;
+  z-index: -1;
 }
 
 /*.ui-btn {
