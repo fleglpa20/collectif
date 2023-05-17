@@ -4,10 +4,66 @@
 :root {
   --color-primary: #60A8B2;
   --container-width: 1488px;
+  --stroke-primary: #60A8B2;
+}
+
+nav #logo {
+  margin-top: 14px;
+  padding-right: 282px;
+}
+
+#menu-icons svg {
+  margin-left: 20px;
+}
+
+#menu-icons span {
+  margin-left: 20px;
+}
+
+nav a {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.stroke-primary {
+  stroke: rgb(var(--color-primary));
+}
+
+.text-secondary{
+  color: #60A8B2;
 }
 
 #reservation-box{
+  box-shadow: 0px 12px 30px #00000029;
+  border-radius: 22px;
+  width: 374px;
+  height: 371px;
+  padding: 15px;
+}
 
+#reservation-box button {
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#reservation-box input {
+  width: 334px;
+}
+
+#reservation-box h4 {
+  font-size: 10px;
+  letter-spacing: 0.3px;
+  font-family: Galano Grotesque;
+}
+
+#reservation-box h1 {
+  font-size: 25px;
+  text-align: left;
+  font: normal normal bold 25px/34px Galano Grotesque;
+  letter-spacing: -0.38px;
+  width: 334px;
 }
 
 #text-margin{
