@@ -38,9 +38,26 @@
   #menu-icons {
     display: none;
   }
+
+  #mobile-menu-icon {
+    display: initial !important;
+    margin-top: 25px;
+  }
+  .l-header .container {
+    display: flex;
+  }
 }
 
-#mobile-menu {
+.mobile-menu {
+  align-items: center;
+  display: none;
+}
+
+.mobile-menu a{
+  padding: 24px;
+}
+
+#mobile-menu-icon {
   display: none;
 }
 
