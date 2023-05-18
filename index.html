@@ -5,12 +5,12 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="/style.css">
-    <title>Vite App</title>
+      <title>Vite App</title>
   </head>
   <body>
   <header class="l-header">
       <div class="container">
-          <div class="ui-link text-default flex">
+          <div class="ui-link text-default flex flex-auto">
               <nav>
                   <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="145" height="40" viewBox="0 0 145 40">
                       <path fill="transparent" class="stroke-current" d="M30.794 27.37a16.755 16.755 0 1 1 .125-19.852"></path>
@@ -33,58 +33,54 @@
                   <a href="#">Majitelé domů</a>
                   <a href="#">FAQ</a>
                   <a href="#">Blog</a>
-                  <a href="#">Kontakt</a>
+                  <a id="last-nav" href="#">Kontakt</a>
                   <!-- ODDELOVACI CARA -->
-                  <span id="menu-icons">
-                      <span>|</span>
+              </nav>
+              <span id="menu-icons">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
                       </svg>
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
                       </svg>
+                      <svg id="mobile-menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>
+
                   </span>
-              </nav>
           </div>
       </div>
   </header>
 
       <!-- PRVNÍ SEKCE -->
       <div class="container">
-          <div class="flex">
-
+          <div class="flex" id="reservation-wrap">
+            <form>
               <div id="reservation-box">
                   <h4 class="font-semibold text-secondary">AŤ VÁM NIC NEUNIKNE</h4>
-                  <h1 class="font-bold">Najděte si jedinečné<br>ubytování na platformě<br>Collectif</h1>
+                  <h1 class="font-semibold">Najděte si jedinečné<br>ubytování na platformě<br>Collectif</h1>
                   <div class="input-box">
-                      <div class="ui-input">
-                          <input type="text" placeholder="Prosím vyberte, kam chcete jet.">
-                          <p>LOKALITA</p>
+                      <div class="ui-input is-floating">
+                          <input type="text" id="input" placeholder="LOKALITA">
+                          <label for="input">LOKALITA</label>
                       </div>
-                  </div>
-                  <div class="input-box">
-                      <div class="ui-input">
-                          <input type="text">
-
-                          <div id="input-box-left">
-                              <p>PŘÍJEZD</p>
-                              <p>Přidat termín</p>
+                      <div class="ui-input-group">
+                          <div class="ui-input">
+                              <input type="text" placeholder="PŘÍJEZD" required onfocus="(this.type = 'date')">
                           </div>
-                          <div id="input-divider"></div>
-                          <div id="input-box-right">
-                              <p>ODJEZD</p>
-                              <p>Přidat termín</p>
+                          <div class="ui-input">
+                              <input type="text" placeholder="ODJEZD" required onfocus="(this.type = 'date')">
                           </div>
                       </div>
                   </div>
-                  <button class="ui-btn bg-gradient-to-br gradient">
+                  <button type="submit" class="ui-btn bg-gradient-to-br gradient">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 10-4.773-4.773 3.375 3.375 0 004.774 4.774zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                       Hledat
                   </button>
               </div>
-
+            </form>
               <div>
                   <img id="main-img" src="/png/pexels-photo-3935702.jpeg">
               </div>
@@ -93,14 +89,14 @@
 
       <!-- DRUHÁ SEKCE (TEXT) -->
       <div class="container text-margin">
-          <h2>Nejlépe hodnocené rekreační pronájmy v Praze</h2>
+          <h2 class="font-semibold">Nejlépe hodnocené rekreační pronájmy v Praze</h2>
           <h3>Hosté hodnotí následující nabídky nejkladněji v dané oblasti</h3>
       </div>
 
       <!-- TŘETÍ SEKCE -->
-      <div class="container">
-          <a href="x">
-            <div class="card">
+      <div class="container card-box flex flex-wrap">
+
+            <a class="card" href="#">
               <div class="card-rating flex">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 28 28" stroke-width="1.5" stroke="white" class="w-6 h-6">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
@@ -117,12 +113,122 @@
                   <p>In publishing and graphic design, lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
               </div>
               <div class="card-price flex">
-                  <p class="font-bold text-secondary">1680</p>
-                  <p>Kč/noc</p>
+                  <p class="font-bold text-secondary number">1680</p>
+                  <p class="specs">Kč/noc</p>
               </div>
-            </div>
+            </a>
+          <a class="card" href="#">
+              <div class="card-rating flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 28 28" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                  </svg>
+                  <p>4.3/5</p>
+              </div>
+              <div class="card-photo">
+                  <div>
+                      <img src="/png/345347733.jpg">
+                  </div>
+              </div>
+              <div class="card-text">
+                  <h3>Apartmán v centru Milána</h3>
+                  <p>In publishing and graphic design, lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
+              </div>
+              <div class="card-price flex">
+                  <p class="font-bold text-secondary number">1680</p>
+                  <p class="specs">Kč/noc</p>
+              </div>
+          </a>
+          <a class="card" href="#">
+              <div class="card-rating flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 28 28" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                  </svg>
+                  <p>4.3/5</p>
+              </div>
+              <div class="card-photo">
+                  <div>
+                      <img src="/png/345347733.jpg">
+                  </div>
+              </div>
+              <div class="card-text">
+                  <h3>Apartmán v centru Milána</h3>
+                  <p>In publishing and graphic design, lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
+              </div>
+              <div class="card-price flex">
+                  <p class="font-bold text-secondary number">1680</p>
+                  <p class="specs">Kč/noc</p>
+              </div>
           </a>
       </div>
+
+          <!-- DRUHÁ ŘADA -->
+      <div class="container card-box flex flex-wrap">
+
+          <a class="card" href="#">
+              <div class="card-rating flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 28 28" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                  </svg>
+                  <p>4.3/5</p>
+              </div>
+              <div class="card-photo">
+                  <div>
+                      <img src="/png/345347733.jpg">
+                  </div>
+              </div>
+              <div class="card-text">
+                  <h3>Apartmán v centru Milána</h3>
+                  <p>In publishing and graphic design, lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
+              </div>
+              <div class="card-price flex">
+                  <p class="font-bold text-secondary number">1680</p>
+                  <p class="specs">Kč/noc</p>
+              </div>
+          </a>
+          <a class="card" href="#">
+              <div class="card-rating flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 28 28" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                  </svg>
+                  <p>4.3/5</p>
+              </div>
+              <div class="card-photo">
+                  <div>
+                      <img src="/png/345347733.jpg">
+                  </div>
+              </div>
+              <div class="card-text">
+                  <h3>Apartmán v centru Milána</h3>
+                  <p>In publishing and graphic design, lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
+              </div>
+              <div class="card-price flex">
+                  <p class="font-bold text-secondary number">1680</p>
+                  <p class="specs">Kč/noc</p>
+              </div>
+          </a>
+          <a class="card" href="#">
+              <div class="card-rating flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 28 28" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                  </svg>
+                  <p>4.3/5</p>
+              </div>
+              <div class="card-photo">
+                  <div>
+                      <img src="/png/345347733.jpg">
+                  </div>
+              </div>
+              <div class="card-text">
+                  <h3>Apartmán v centru Milána</h3>
+                  <p>In publishing and graphic design, lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
+              </div>
+              <div class="card-price flex">
+                  <p class="font-bold text-secondary number">1680</p>
+                  <p class="specs">Kč/noc</p>
+              </div>
+          </a>
+      </div>
+
       <!-- PATIČKA -->
       <footer>
           <div class="container">
