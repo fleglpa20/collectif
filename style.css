@@ -306,6 +306,104 @@ footer button {
   margin-top: 26px;
 }
 
+.card-detail {
+  padding: 16px;
+  width: 190px;
+  height: 102px;
+  border: 1px;
+  border-style: solid;
+  border-color: #00000041;
+  border-radius: 24px;
+}
+
+.card-detail svg {
+  height: 44px;
+  width: 44px;
+}
+
+.card-detail p {
+  font-family: "Galano Grotesque";
+  font-size: 10px;
+  letter-spacing: 0px;
+}
+
+.card-detail div {
+  margin: auto;
+}
+
+.card-box-detail {
+  gap: 24px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.description svg {
+  height: 35px;
+}
+
+.description {
+  margin-top: 20px;
+}
+
+.description-text {
+  margin-left: 15px;
+}
+
+.description-text h2 {
+  font-family: "Galano Grotesque";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 23px;
+}
+
+.description-text p {
+  font-family: "Galano Grotesque";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 23px;
+}
+
+.description-wrap {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: black;
+  border-bottom-color: black;
+}
+
+.extra-margin-top {
+  margin-top: 30px;
+}
+
+.extra-margin-bottom {
+  margin-bottom: 30px;
+}
+
+.location {
+  margin-top: 5px;
+}
+
+.detail-h3 {
+  font-family: "Galano Grotesque";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.detail-h2 {
+  font-family: "Galano Grotesque";
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.detail-h1 {
+  font-family: "Galano Grotesque";
+  font-weight: 600;
+  font-size: 20px;
+}
+
 /*.ui-btn {
 
 }
