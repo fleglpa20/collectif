@@ -9,6 +9,8 @@
   --stroke-primary: #60A8B2;
 }
 
+/* https://developer.chrome.com/articles/css-nesting/ */
+
 @media only screen and (max-width: 850px){
   #main-img {
     display: none;
@@ -105,6 +107,9 @@ nav {
 
 .text-secondary{
   color: #60A8B2;
+  font-size: 10px;
+  letter-spacing: 0.3px;
+  font-family: "Galano Grotesque";
 }
 
 #reservation-box{
@@ -402,6 +407,107 @@ footer button {
   font-family: "Galano Grotesque";
   font-weight: 600;
   font-size: 20px;
+}
+
+.head-img {
+  min-width: 618px;
+  width: 618px;
+  height: 432px;
+  border-radius: 24px;
+}
+
+.photos {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  gap: 24px;
+}
+
+.photo-grid {
+  gap: 24px;
+}
+
+.photo-grid img {
+  min-width: 297px;
+  min-height: 204px;
+  width: 297px;
+  height: 204px;
+  border-radius: 24px;
+}
+
+#reservation-confirmation-box{
+  box-shadow: 0px 12px 30px #00000029;
+  border-radius: 22px;
+  width: 404px;
+  height: 722px;
+  padding: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
+#reservation-confirmation-box h1 {
+  font-family: "Galano Grotesque";
+  font-size: 25px;
+  margin-top: 5px;
+  font-weight: 800;
+}
+
+.main-gap {
+  gap: 25px;
+}
+
+#reservation-confirmation-box button {
+  padding-left: 130px;
+  padding-right: 130px;
+  height: 53px;
+}
+
+#reservation-confirmation-box .ui-input-group {
+  width: 334px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.reservation-price {
+  padding-bottom: 25px;
+  border-bottom: 1px;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+}
+
+.reservation-price div {
+  justify-content: space-between;
+}
+
+.reservation-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.reservation-price .item {
+  text-decoration: underline;
+  font-family: "Galano Grotesque";
+  font-weight: 300;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.price {
+  font-family: "Galano Grotesque";
+  font-size: 16px;
+  color: #60A8B2;
+}
+
+.space-between {
+  margin-top: 25px;
+  justify-content: space-between;
+}
+
+.collblue {
+  color: #60A8B2;
+  font-size: 18px;
 }
 
 /*.ui-btn {
