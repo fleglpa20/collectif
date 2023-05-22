@@ -47,6 +47,7 @@
   }
   .l-header .container {
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -509,13 +510,3 @@ footer button {
   color: #60A8B2;
   font-size: 18px;
 }
-
-/*.ui-btn {
-
-}
-
-.l-header {
-  @media (--media-md) {
-    background-color: red;
-  }
-}*/
