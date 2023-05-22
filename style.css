@@ -26,13 +26,23 @@
   }
 }
 
-@media only screen and (max-width: 1350px){
-  nav{
-    gap: 20px !important;
+@media only screen and (max-width: 1380px){
+  .photos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .photo-grid {
+    justify-content: center;
   }
 }
 
 @media only screen and (max-width: 1350px){
+
+  nav{
+    gap: 20px !important;
+  }
+
   nav a{
     display: none;
   }
@@ -325,15 +335,13 @@ footer button {
 .card-detail svg {
   height: 44px;
   width: 44px;
+  margin: auto;
 }
 
 .card-detail p {
   font-family: "Galano Grotesque";
   font-size: 10px;
   letter-spacing: 0px;
-}
-
-.card-detail div {
   margin: auto;
 }
 
@@ -408,6 +416,7 @@ footer button {
   font-family: "Galano Grotesque";
   font-weight: 600;
   font-size: 20px;
+  margin-top: 25px;
 }
 
 .head-img {

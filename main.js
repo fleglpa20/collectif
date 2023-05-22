@@ -17,4 +17,16 @@ function enableDateInput() {
     }
 }
 
+function enableNumberInput() {
+    var dateInputs = document.getElementsByClassName('numberInput');
+    for (var i = 0; i < dateInputs.length; i++) {
+        var input = dateInputs[i];
+        input.addEventListener('focus', function() {
+            this.type = 'number';
+        });
+    }
+}
+
+enableNumberInput();
+
 enableDateInput();
