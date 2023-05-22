@@ -1,0 +1,24 @@
+@import "winduum/src/main.css";
+@import "winduum/src/tailwind.css";
+
+footer img {
+  object-fit: cover;
+  width: 1295px;
+  height: 425px;
+  border-radius: 40px;
+  filter: brightness(66%);
+}
+
+footer .container {
+  margin-top: 90px;
+  position: relative;
+}
+
+footer button {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 186px;
+  height: 44px;
+}

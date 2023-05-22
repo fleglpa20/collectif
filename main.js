@@ -27,6 +27,6 @@ function enableNumberInput() {
     }
 }
 
-enableNumberInput();
-
 enableDateInput();
+
+enableNumberInput();

@@ -1,0 +1,22 @@
+@import "winduum/src/main.css";
+@import "winduum/src/tailwind.css";
+@import url('https://fonts.cdnfonts.com/css/galano-grotesque-alt');
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+
+.ui-input-group {
+  width: 334px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.ui-input-group input {
+  width: 167px;
+}
+
+.input-box {
+  margin-top: 26px;
+}
+
+.description svg {
+  height: 35px;
+}

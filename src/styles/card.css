@@ -1,0 +1,99 @@
+@import "winduum/src/main.css";
+@import "winduum/src/tailwind.css";
+@import url('https://fonts.cdnfonts.com/css/galano-grotesque-alt');
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+
+.card{
+  position: relative;
+  width: 402px;
+  height: 566px;
+  border: 1px solid #00000019;
+  padding: 32px;
+  border-radius: 20px;
+  margin-top: 60px;
+}
+
+.card-rating{
+  position: absolute;
+  margin-top: 8px;
+  margin-left: 8px;
+  width: 62px;
+  height: 29px;
+  background-color: #60A8B2;
+  border-radius: 9px;
+}
+
+.card-rating svg {
+  margin-top: 3px;
+  margin-left: 2px;
+}
+
+.card-rating p {
+  font-size: 14px;
+  margin-top: 3px;
+  color: white;
+}
+
+.card-photo img{
+  border-radius: 12px;
+}
+
+.card-text h3{
+  margin-top: 20px;
+  text-align: left;
+  font-family: "Galano Grotesque";
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.card-text p{
+  margin-top: 15px;
+  text-align: left;
+  font-family: "Galano Grotesque";
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0px;
+}
+
+.card-price{
+  margin-top: 30px;
+}
+
+.card-box {
+  justify-content: center;
+  gap: 27px;
+  padding-left: 52px;
+  padding-right: 52px;
+}
+
+.card-detail {
+  padding: 16px;
+  width: 190px;
+  height: 102px;
+  border: 1px;
+  border-style: solid;
+  border-color: #00000041;
+  border-radius: 24px;
+}
+
+.card-detail svg {
+  height: 44px;
+  width: 44px;
+  margin: auto;
+}
+
+.card-detail p {
+  font-family: "Galano Grotesque";
+  font-size: 10px;
+  letter-spacing: 0px;
+  margin: auto;
+}
+
+.card-box-detail {
+  gap: 24px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+

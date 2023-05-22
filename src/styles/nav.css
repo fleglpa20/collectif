@@ -1,0 +1,37 @@
+@import "winduum/src/main.css";
+@import "winduum/src/tailwind.css";
+@import url('https://fonts.cdnfonts.com/css/galano-grotesque-alt');
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+
+nav #logo {
+  margin-top: 14px;
+  padding-right: 146px;
+}
+
+#menu-icons {
+  margin-top: 26px;
+}
+
+#last-nav {
+  border-right: 1px;
+  padding-right: 32px;
+  border-right-style: solid;
+  border-right-color: dimgray;
+}
+
+#menu-icons svg {
+  padding-top: 5px;
+  margin-left: 20px;
+}
+
+nav a {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-weight: 500;
+  margin-top: 32px;
+}
+
+nav {
+  display: flex;
+  gap: 64px;
+}

@@ -1,0 +1,42 @@
+@import "winduum/src/main.css";
+@import "winduum/src/tailwind.css";
+@import url('https://fonts.cdnfonts.com/css/galano-grotesque-alt');
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+
+:root {
+  --color-primary: #60A8B2;
+  --container-width: 1366px;
+  --stroke-primary: #60A8B2;
+}
+
+/* https://developer.chrome.com/articles/css-nesting/ */
+
+.container {
+  padding-left: 52px;
+  padding-right: 52px;
+}
+
+.text-margin{
+  margin-top: 115px;
+}
+
+.main-gap {
+  gap: 25px;
+}
+
+.space-between {
+  margin-top: 25px;
+  justify-content: space-between;
+}
+
+.extra-margin-top {
+  margin-top: 30px;
+}
+
+.extra-margin-bottom {
+  margin-bottom: 30px;
+}
+
+.location {
+  margin-top: 5px;
+}

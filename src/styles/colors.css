@@ -1,0 +1,22 @@
+@import "winduum/src/main.css";
+@import "winduum/src/tailwind.css";
+
+.stroke-primary {
+  stroke: rgb(var(--color-primary));
+}
+
+.text-secondary{
+  color: #60A8B2;
+  font-size: 10px;
+  letter-spacing: 0.3px;
+  font-family: "Galano Grotesque";
+}
+
+.gradient{
+  background: transparent linear-gradient(90deg, #1CD0D6 0%, #73AEC9 100%) 0% 0% no-repeat padding-box;
+}
+
+.collblue {
+  color: #60A8B2;
+  font-size: 18px;
+}
