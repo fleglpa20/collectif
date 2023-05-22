@@ -1,7 +1,7 @@
 @import "winduum/src/main.css";
 @import "winduum/src/tailwind.css";
 
-.description-wrap {
+.layout-description-wrap {
   padding-top: 20px;
   padding-bottom: 30px;
   border-top: 1px;
@@ -12,7 +12,7 @@
   border-bottom-color: black;
 }
 
-.description {
+.component-description {
   margin-top: 20px;
 }
 

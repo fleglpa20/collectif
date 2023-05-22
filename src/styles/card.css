@@ -3,7 +3,7 @@
 @import url('https://fonts.cdnfonts.com/css/galano-grotesque-alt');
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
 
-.card{
+.component-card{
   position: relative;
   width: 402px;
   height: 566px;
@@ -13,7 +13,7 @@
   margin-top: 60px;
 }
 
-.card-rating{
+.component-card-rating{
   position: absolute;
   margin-top: 8px;
   margin-left: 8px;
@@ -23,22 +23,22 @@
   border-radius: 9px;
 }
 
-.card-rating svg {
+.component-card-rating svg {
   margin-top: 3px;
   margin-left: 2px;
 }
 
-.card-rating p {
+.component-card-rating p {
   font-size: 14px;
   margin-top: 3px;
   color: white;
 }
 
-.card-photo img{
+.component-card-photo img{
   border-radius: 12px;
 }
 
-.card-text h3{
+.component-card-text h3{
   margin-top: 20px;
   text-align: left;
   font-family: "Galano Grotesque";
@@ -48,7 +48,7 @@
   color: #000000;
 }
 
-.card-text p{
+.component-card-text p{
   margin-top: 15px;
   text-align: left;
   font-family: "Galano Grotesque";
@@ -57,18 +57,18 @@
   letter-spacing: 0px;
 }
 
-.card-price{
+.component-card-price{
   margin-top: 30px;
 }
 
-.card-box {
+.component-card-card-row {
   justify-content: center;
   gap: 27px;
   padding-left: 52px;
   padding-right: 52px;
 }
 
-.card-detail {
+.component-card-detail {
   padding: 16px;
   width: 190px;
   height: 102px;
@@ -78,20 +78,20 @@
   border-radius: 24px;
 }
 
-.card-detail svg {
+.component-card-detail svg {
   height: 44px;
   width: 44px;
   margin: auto;
 }
 
-.card-detail p {
+.component-card-detail p {
   font-family: "Galano Grotesque";
   font-size: 10px;
   letter-spacing: 0px;
   margin: auto;
 }
 
-.card-box-detail {
+.layout-card-row-detail {
   gap: 24px;
   margin-top: 40px;
   margin-bottom: 40px;

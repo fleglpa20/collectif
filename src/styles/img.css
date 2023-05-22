@@ -3,7 +3,18 @@
 @import url('https://fonts.cdnfonts.com/css/galano-grotesque-alt');
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
 
-#main-img{
+@media only screen and (max-width: 1350px){
+  .photos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .photo-grid {
+    justify-content: center;
+  }
+}
+
+#layout-main-image{
   max-height: 558px;
   max-width: 939px;
   border-radius: 39px;

@@ -3,23 +3,43 @@
 @import url('https://fonts.cdnfonts.com/css/galano-grotesque-alt');
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
 
+@media only screen and (max-width: 1350px){
+
+  nav{
+    gap: 20px !important;
+  }
+
+  nav a{
+    display: none;
+  }
+
+  #nav-menu-icons {
+    display: none;
+  }
+
+  #mobile-menu-icon {
+    display: initial !important;
+    margin-top: 25px;
+  }
+  .l-header .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 nav #logo {
   margin-top: 14px;
   padding-right: 146px;
 }
 
-#menu-icons {
-  margin-top: 26px;
-}
-
-#last-nav {
+#last-link-nav {
   border-right: 1px;
   padding-right: 32px;
   border-right-style: solid;
   border-right-color: dimgray;
 }
 
-#menu-icons svg {
+#nav-menu-icons svg {
   padding-top: 5px;
   margin-left: 20px;
 }
@@ -34,4 +54,21 @@ nav a {
 nav {
   display: flex;
   gap: 64px;
+}
+
+.nav-mobile-menu-collapsible {
+  align-items: center;
+  display: none;
+}
+
+.nav-mobile-menu-collapsible a{
+  height: 72px;
+}
+
+#nav-mobile-menu-icon {
+  display: none;
+}
+
+#nav-menu-icons {
+  margin-top: 26px;
 }

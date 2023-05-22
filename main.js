@@ -8,9 +8,10 @@ function triggermobile() {
 }
 
 function enableDateInput() {
-    var dateInputs = document.getElementsByClassName('dateInput');
-    for (var i = 0; i < dateInputs.length; i++) {
-        var input = dateInputs[i];
+    const dateInputs = document.getElementsByClassName('dateInput');
+
+    for (let i = 0; i < dateInputs.length; i++) {
+        const input = dateInputs[i];
         input.addEventListener('focus', function() {
             this.type = 'date';
         });
@@ -18,9 +19,9 @@ function enableDateInput() {
 }
 
 function enableNumberInput() {
-    var dateInputs = document.getElementsByClassName('numberInput');
-    for (var i = 0; i < dateInputs.length; i++) {
-        var input = dateInputs[i];
+    const dateInputs = document.getElementsByClassName('numberInput');
+    for (let i = 0; i < dateInputs.length; i++) {
+        const input = dateInputs[i];
         input.addEventListener('focus', function() {
             this.type = 'number';
         });

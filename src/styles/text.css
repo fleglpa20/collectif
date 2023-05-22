@@ -52,7 +52,7 @@
   letter-spacing: 0px;
 }
 
-.card-price .number{
+.component-card-price .number{
   text-align: left;
   font-weight: 600;
   font-size: 22px;
@@ -60,7 +60,7 @@
   letter-spacing: 0px;
 }
 
-.card-price .specs{
+.component-card-price .specs{
   text-align: left;
   font-size: 16px;
   font-family: "Galano Grotesque";
