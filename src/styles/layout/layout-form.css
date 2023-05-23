@@ -2,10 +2,10 @@
   width: 334px;
   margin-top: 12px;
   margin-bottom: 12px;
-}
 
-.ui-input-group input {
-  width: 167px;
+  & input {
+    width: 167px;
+  }
 }
 
 .layout-input-box {

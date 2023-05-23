@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1350px){
+@media not all and (--media-xl){
 
   nav{
     gap: 20px !important;
@@ -12,41 +12,38 @@
     display: none;
   }
 
-  #mobile-menu-icon {
+  #nav-mobile-menu-icon {
     display: initial !important;
     margin-top: 25px;
   }
+
   .l-header .container {
     display: flex;
     justify-content: space-between;
   }
 }
 
-nav #logo {
-  margin-top: 14px;
-  padding-right: 146px;
-}
-
-#last-link-nav {
-  border-right: 1px;
-  padding-right: 32px;
-  border-right-style: solid;
-  border-right-color: dimgray;
-}
-
-#nav-menu-icons svg {
-  padding-top: 5px;
-  margin-left: 20px;
-}
-
-nav a {
-  padding-top: 3px;
-  padding-bottom: 3px;
-  font-weight: 500;
-  margin-top: 32px;
+#nav-menu-icons {
+  & svg {
+    padding-top: 5px;
+    margin-left: 20px;
+  }
+  margin-top: 26px;
 }
 
 nav {
+  #logo {
+    margin-top: 14px;
+    padding-right: 146px;
+  }
+
+  & a {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-weight: 500;
+    margin-top: 32px;
+  }
+
   display: flex;
   gap: 64px;
 }
@@ -54,16 +51,19 @@ nav {
 .nav-mobile-menu-collapsible {
   align-items: center;
   display: none;
-}
 
-.nav-mobile-menu-collapsible a{
-  height: 72px;
+  & a {
+    height: 72px;
+  }
 }
 
 #nav-mobile-menu-icon {
   display: none;
 }
 
-#nav-menu-icons {
-  margin-top: 26px;
+#last-link-nav {
+  border-right: 1px;
+  padding-right: 32px;
+  border-right-style: solid;
+  border-right-color: dimgray;
 }

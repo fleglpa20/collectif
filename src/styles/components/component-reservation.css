@@ -16,7 +16,7 @@
   }
 }
 
-#component-reservation-box{
+#component-reservation-box {
   box-shadow: 0px 12px 30px #00000029;
   border-radius: 22px;
   width: 404px;
@@ -26,12 +26,12 @@
   margin-left: 0px;
   margin-right: -125px;
   background-color: white;
-}
 
-#component-reservation-box button {
-  padding-left: 130px;
-  padding-right: 130px;
-  height: 53px;
+  & button {
+    padding-left: 130px;
+    padding-right: 130px;
+    height: 53px;
+  }
 }
 
 .reservation-price {
@@ -39,8 +39,8 @@
   border-bottom: 1px;
   border-bottom-color: black;
   border-bottom-style: solid;
-}
 
-.reservation-price div {
-  justify-content: space-between;
+  & div {
+    justify-content: space-between;
+  }
 }
