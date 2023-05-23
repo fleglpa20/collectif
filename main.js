@@ -1,4 +1,5 @@
 function triggermobile() {
+    console.log("test")
     var div = document.getElementById("show");
     if (div.style.display === "none") {
         div.style.display = "flex";
@@ -31,3 +32,5 @@ function enableNumberInput() {
 enableDateInput();
 
 enableNumberInput();
+
+document.querySelector('[data-action="openMenu"]').addEventListener('click', () => triggermobile())

@@ -50,8 +50,6 @@ nav {
 
 .nav-mobile-menu-collapsible {
   align-items: center;
-  display: none;
-
   & a {
     height: 72px;
   }
