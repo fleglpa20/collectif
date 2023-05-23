@@ -1,0 +1,48 @@
+.component-card-detail p {
+    font-family: "Galano Grotesque";
+    font-size: 10px;
+    letter-spacing: 0px;
+    margin: auto;
+}
+
+.component-card-text h3{
+    margin-top: 20px;
+    text-align: left;
+    font-family: "Galano Grotesque";
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.component-card-text p{
+    margin-top: 15px;
+    text-align: left;
+    font-family: "Galano Grotesque";
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0px;
+}
+
+.component-card-rating p {
+    font-size: 14px;
+    margin-top: 3px;
+    color: white;
+}
+
+.component-card-price .number{
+    text-align: left;
+    font-weight: 600;
+    font-size: 22px;
+    font-family: "Galano Grotesque";
+    letter-spacing: 0px;
+}
+
+.component-card-price .specs{
+    text-align: left;
+    font-size: 16px;
+    font-family: "Galano Grotesque";
+    letter-spacing: 0px;
+    padding-top: 5px;
+    padding-left: 8px;
+}

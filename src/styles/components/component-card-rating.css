@@ -1,0 +1,14 @@
+.component-card-rating{
+  position: absolute;
+  margin-top: 8px;
+  margin-left: 8px;
+  width: 62px;
+  height: 29px;
+  background-color: #60A8B2;
+  border-radius: 9px;
+}
+
+.component-card-rating svg {
+  margin-top: 3px;
+  margin-left: 2px;
+}

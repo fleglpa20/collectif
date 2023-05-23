@@ -17,24 +17,6 @@
   margin-top: 25px;
 }
 
-.component-description-text h2 {
-  font-family: "Galano Grotesque";
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 23px;
-}
-
-.component-description-text p {
-  font-family: "Galano Grotesque";
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 23px;
-}
-
-.component-description-text {
-  margin-left: 8px;
-}
-
 .text-margin h2{
   text-align: left;
   font-family: "Galano Grotesque";
@@ -49,23 +31,6 @@
   font-size: 18px;
   line-height: 48px;
   letter-spacing: 0px;
-}
-
-.component-card-price .number{
-  text-align: left;
-  font-weight: 600;
-  font-size: 22px;
-  font-family: "Galano Grotesque";
-  letter-spacing: 0px;
-}
-
-.component-card-price .specs{
-  text-align: left;
-  font-size: 16px;
-  font-family: "Galano Grotesque";
-  letter-spacing: 0px;
-  padding-top: 5px;
-  padding-left: 8px;
 }
 
 .centered {

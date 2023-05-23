@@ -1,0 +1,17 @@
+.component-description-text h2 {
+  font-family: "Galano Grotesque";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 23px;
+}
+
+.component-description-text p {
+  font-family: "Galano Grotesque";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 23px;
+}
+
+.component-description-text {
+  margin-left: 8px;
+}

@@ -1,0 +1,46 @@
+@import url('https://fonts.cdnfonts.com/css/galano-grotesque-alt');
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+
+@media only screen and (max-width: 850px){
+  #layout-main-image {
+    display: none;
+  }
+
+  #component-reservation-box {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  #layout-reservation-wrap {
+    justify-content: space-evenly;
+  }
+}
+
+#component-reservation-box{
+  box-shadow: 0px 12px 30px #00000029;
+  border-radius: 22px;
+  width: 404px;
+  height: 401px;
+  padding: 35px;
+  margin-top: 144px;
+  margin-left: 0px;
+  margin-right: -125px;
+  background-color: white;
+}
+
+#component-reservation-box button {
+  padding-left: 130px;
+  padding-right: 130px;
+  height: 53px;
+}
+
+.reservation-price {
+  padding-bottom: 25px;
+  border-bottom: 1px;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+}
+
+.reservation-price div {
+  justify-content: space-between;
+}

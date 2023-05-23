@@ -1,0 +1,17 @@
+.component-card{
+  position: relative;
+  width: 402px;
+  height: 566px;
+  border: 1px solid #00000019;
+  padding: 32px;
+  border-radius: 20px;
+  margin-top: 60px;
+}
+
+.component-card-photo img{
+  border-radius: 12px;
+}
+
+.component-card-price{
+  margin-top: 30px;
+}

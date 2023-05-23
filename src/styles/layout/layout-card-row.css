@@ -1,0 +1,6 @@
+.layout-card-row {
+  justify-content: center;
+  gap: 27px;
+  padding-left: 52px;
+  padding-right: 52px;
+}
