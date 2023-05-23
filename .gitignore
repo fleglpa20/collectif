@@ -2,7 +2,9 @@
 .idea
 .docker
 node_modules
-/app
+/app/Model
+/app/Services
+/app/Presenters
 /config
 /log
 /cms
