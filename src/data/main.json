@@ -1,0 +1,12 @@
+{
+  "assets": {
+    "css": {
+      "all": [
+        "/main.css"
+      ]
+    },
+    "js": {
+      "main": "/main.js"
+    }
+  }
+}
