@@ -1,0 +1,16 @@
+
+    <div class="container photos flex">
+
+        <img class="head-img" alt="{$control->item->name_automatic}" src="{$control->item->photos->files->toCollection()->fetch()|thumb:900,580,true}">
+
+        <div class="photo-grid flex flex-wrap">
+
+            {foreach $control->item->photos->files as $photo}
+                {continueIf $iterator->first}
+                    <img alt="{$control->item->name_automatic}" src="{$photo|thumb:900,580,true}">
+            {/foreach}
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="detail-h2">Nemovitost na krátkodobý či dlouhodobý pronájem</h2>
+    </div>
